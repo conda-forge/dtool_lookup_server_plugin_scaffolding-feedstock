@@ -22,10 +22,11 @@ requirements:
     - pip
     - python ${{ python_min }}.*
     - setuptools_scm
-    - setuptools
+    - setuptools <81
   run:
     - dtool_lookup_server >=0.17.2
     - python >=${{ python_min }}
+    - setuptools <81
 
 tests:
   - python:
